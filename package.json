@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:bdd": "cucumber-js",
+    "report": "node generate-report.js"
   },
   "devDependencies": {
-    "@playwright/test": "^1.34.0"
+    "@cucumber/cucumber": "^12.8.2",
+    "@cucumber/html-formatter": "^23.1.0",
+    "@playwright/test": "^1.34.0",
+    "@types/node": "^22.16.7",
+    "@types/web": "^0.0.349",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.59.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   }
 }

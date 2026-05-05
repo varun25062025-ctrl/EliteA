@@ -1,0 +1,3768 @@
+[
+  {
+    "description": "  As a user\n  I want to mark todos as complete or incomplete\n  So that I can track my progress",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo-completion-management;mark-a-single-todo-as-complete",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Mark a single todo as complete",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 919567599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1028936400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38305599
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219001100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81470299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the todo \"Buy groceries\" should be marked as completed",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19202599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the todo count should show \"2 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7896999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 246361600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-completion-management;mark-multiple-todos-as-complete",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Mark multiple todos as complete",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 638155899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 915693200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27541000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142351500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45523599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I mark the todo \"Complete project\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82355400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see 2 completed todos",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6970500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the todo count should show \"1 item left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10061099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 283403199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-completion-management;toggle-todo-completion-status",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Toggle todo completion status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 720209999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 928765600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26714500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128308900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43964999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the todo \"Buy groceries\" should be marked as completed",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5840000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I mark the todo \"Buy groceries\" as incomplete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76053800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the todo \"Buy groceries\" should not be marked as completed",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8798899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "the todo count should show \"3 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6209200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 235722799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-completion-management;mark-all-todos-as-complete-using-toggle-all",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Mark all todos as complete using toggle all",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 557154900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 910808000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30104600
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141297199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I click the toggle all button",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55351999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I should see 3 completed todos",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7317800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the todo count should show \"0 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10709600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 236619300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-completion-management;toggle-all-todos-back-to-active",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Toggle all todos back to active",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 586963400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 901704100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27883800
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215604100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I click the toggle all button",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43410799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I should see 3 completed todos",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7084100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I click the toggle all button",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68612600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "I should see 0 completed todos",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8609400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the todo count should show \"3 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4864199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 204880500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo-completion-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Todo Completion Management",
+    "tags": [],
+    "uri": "features\\todo-completion.feature"
+  },
+  {
+    "description": "  As a user\n  I want to create and manage todo items\n  So that I can keep track of my tasks",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo-creation-and-management;create-a-single-todo-item",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Create a single todo item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 533450699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 929310499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35813899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I create a todo with text \"Buy groceries\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86855999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the todo \"Buy groceries\" in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9837300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the todo count should show \"1 item left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4959499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the input field should be empty",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7290100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 243266200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-creation-and-management;create-multiple-todo-items",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Create multiple todo items",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 666221900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 964572599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29017899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I create a todo with text \"Buy groceries\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78373499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I create a todo with text \"Complete project\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44088999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I create a todo with text \"Call dentist\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47914200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see 3 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11007900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the todo count should show \"3 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6429200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 262392400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-creation-and-management;cannot-create-empty-todo",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Cannot create empty todo",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 655091400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 945735699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29918200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I press Enter on an empty todo input",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24246599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see 0 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5945899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 249455400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-creation-and-management;create-todo-with-special-characters",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Create todo with special characters",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 605627000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 912784700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24532200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I create a todo with text \"Test @#$% special & characters!\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54873599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see a todo containing \"Test @#$% special\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9732900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I should see a todo containing \"characters!\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5337099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 248889300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-creation-and-management;create-todo-with-very-long-text",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Create todo with very long text",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 523207399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1011836299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30460399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I create a todo with 200 characters",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80643199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I should see 1 todo in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8373700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the todo should contain the long text",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8782400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 254681199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo-creation-and-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Todo Creation and Management",
+    "tags": [],
+    "uri": "features\\todo-creation.feature"
+  },
+  {
+    "description": "  As a user\n  I want to delete todo items\n  So that I can remove tasks I no longer need",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo-deletion-functionality;delete-a-single-todo",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Delete a single todo",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 671649499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 979232000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31067900
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207793499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I delete the todo \"Buy groceries\"",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116130800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should not see the todo \"Buy groceries\"",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8539100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I should see 3 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5642299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the todo count should show \"3 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4405699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 237729400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-deletion-functionality;delete-multiple-todos-individually",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Delete multiple todos individually",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 676326600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 899262399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24766099
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146479699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I delete the todo \"Buy groceries\"",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117701100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I delete the todo \"Complete project\"",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114771600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see 2 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6277600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 538067500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-deletion-functionality;clear-all-completed-todos",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Clear all completed todos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 538351800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 899026999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29438099
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208113300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49785500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I mark the todo \"Complete project\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88134500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I click the clear completed button",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45828499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "I should see 2 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6088100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I should see 0 completed todos",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7944599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 264617300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-deletion-functionality;clear-completed-button-visibility",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Clear completed button visibility",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 567149300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 861904500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32545400
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237477300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the clear completed button should be disabled",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10369500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64558100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the clear completed button should be enabled",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6586400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 334883200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-deletion-functionality;delete-the-last-todo-in-the-list",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Delete the last todo in the list",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 602340899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 936446499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29340799
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166021200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I delete all todos one by one",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 430898900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I should see 0 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7399300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the footer should not be visible",
+            "match": {
+              "location": "features\\step_definitions\\deletion-steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5046999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 227156499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo-deletion-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Todo Deletion Functionality",
+    "tags": [],
+    "uri": "features\\todo-deletion.feature"
+  },
+  {
+    "description": "  As a user\n  I want to see drag handles on todo items\n  So that I know I can reorder my tasks",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-drag-handles-are-visible-on-all-todos",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verify drag handles are visible on all todos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 627957699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 914704599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28863899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204258199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "each todo should have a visible drag handle",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28117799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the drag handle should have the correct accessibility attributes",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12830200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239835800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-drag-handle-appearance",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verify drag handle appearance",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 655239399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 910389500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27972900
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184145400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the drag handle should display the hamburger icon",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4873499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the drag handle should have grab cursor styling",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35978900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 220172700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-todos-maintain-order-when-created",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verify todos maintain order when created",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 652375999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 908584399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32076500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210080000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the todo at position 1 should be \"First task\"",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6523300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the todo at position 2 should be \"Second task\"",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4732400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the todo at position 3 should be \"Third task\"",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3439899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the todo at position 4 should be \"Fourth task\"",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3095100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the todo at position 5 should be \"Fifth task\"",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3036899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 236018700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-all-todos-have-consistent-drag-handle-placement",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Verify all todos have consistent drag handle placement",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 663167799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 929233599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24641000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174538999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "all todos should have drag handles in the same position",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23194799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "drag handles should be left-aligned in each todo item",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7551500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 264989399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-drag-handle-cursor-styling",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Verify drag handle cursor styling",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 618129600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 924658300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30209299
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212761599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the drag handle should have grab cursor styling",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40052300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the drag handle should remain visible",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16600099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 253448300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-completed-todos-have-drag-handles",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Verify completed todos have drag handles",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 650013299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 925247699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34334100
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212893000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "I mark the todo \"Second task\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59380399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "the completed todo should still have a visible drag handle",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6709199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the drag handle functionality should remain available",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10550100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 255391900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-todo-count-persists-with-drag-handles-present",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Verify todo count persists with drag handles present",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 670524199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 915961199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28708400
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179224099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I should see 5 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4256000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "the todo count should show \"5 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4586799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "each todo should have its drag handle",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5970699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239117700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-drag-and-drop-re-ordering-ui-elements;verify-drag-handles-do-not-interfere-with-other-todo-actions",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Verify drag handles do not interfere with other todo actions",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 665821799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 909265800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27472599
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fourth task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Fifth task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos in order:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213279100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I hover over a todo",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64655599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "I should see both the drag handle and delete button",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:132"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10680700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "I should be able to click the checkbox",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:142"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47622600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "I should be able to click the delete button",
+            "match": {
+              "location": "features\\step_definitions\\drag-drop-steps.ts:151"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 584968999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 252507700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo-drag-and-drop-re-ordering-ui-elements",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Todo Drag and Drop Re-ordering UI Elements",
+    "tags": [],
+    "uri": "features\\todo-drag-drop.feature"
+  },
+  {
+    "description": "  As a user\n  I want to filter todos by their status\n  So that I can focus on specific tasks",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo-filtering-functionality;view-all-todos",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "View all todos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 666336999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 859582199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35628299
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Exercise"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 269046299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65683000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I mark the todo \"Complete project\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91396300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I click on the \"All\" filter",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100536299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see 5 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7629999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 261936799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-filtering-functionality;view-only-active-todos",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "View only active todos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 718603600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 918246200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28459399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Exercise"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186578699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53985099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I mark the todo \"Complete project\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94967499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click on the \"Active\" filter",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107196700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see 3 visible todos",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12648500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the todo count should show \"3 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8021600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 259380299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-filtering-functionality;view-only-completed-todos",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "View only completed todos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 603558400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 901897400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28921699
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Exercise"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190517399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60358899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I mark the todo \"Complete project\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95365100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I click on the \"Completed\" filter",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90884399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see 2 visible todos",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9720800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 252663099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-filtering-functionality;filter-selection-persists",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Filter selection persists",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 619596099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 909294299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28684000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Exercise"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171801500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54143100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I mark the todo \"Complete project\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85382299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I click on the \"Active\" filter",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94930000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I click on the \"All\" filter",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65188900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I should see 5 todos in the list",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7426799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 252410799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-filtering-functionality;active-filter-shows-newly-created-todo",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Active filter shows newly created todo",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 646155800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the TodoMVC application",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 910286400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I clear all existing todos",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27857199
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Buy groceries"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Complete project"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Call dentist"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Read book"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Exercise"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have the following todos:",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163921300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I mark the todo \"Buy groceries\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52395299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I mark the todo \"Complete project\" as complete",
+            "match": {
+              "location": "features\\step_definitions\\completion-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96607100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I click on the \"Active\" filter",
+            "match": {
+              "location": "features\\step_definitions\\filtering-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98799800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I create a todo with text \"New task\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34508100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the todo count should show \"4 items left\"",
+            "match": {
+              "location": "features\\step_definitions\\common-steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4469599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 243421800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo-filtering-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Todo Filtering Functionality",
+    "tags": [],
+    "uri": "features\\todo-filtering.feature"
+  }
+]
